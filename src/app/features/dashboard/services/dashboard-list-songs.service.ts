@@ -16,6 +16,6 @@ export class DashboardListSongsService {
     }
 
     getListCurrentSongsPlaying(): Observable<ListSongOrders> {
-        return this.httpClient.get<ListSongOrders>('../../../../assets/data/list-songs-current-order.json');
+        return this.httpClient.get<ListSongOrders>(this.api + '/dashboard/list-songs-current-order');
     }
 }

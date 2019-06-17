@@ -10,4 +10,5 @@ export interface Track {
     location: string;
     duration: string;
     image: string;
+    popularity: number;
 }

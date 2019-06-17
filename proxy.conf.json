@@ -1,6 +1,6 @@
 {
     "/api/*": {
-        "target": "http://localhost:8080/karaokeboxapi/api",
+        "target": "http://demo0868783.mockable.io/karaokebox/api",
         "secure": false,
         "logLevel": "debug",
         "changeOrigin": true,
