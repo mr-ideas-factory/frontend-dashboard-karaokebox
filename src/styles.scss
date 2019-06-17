@@ -1,10 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+// Mixins
+@import 'styles/mixins/responsive';
 
-html, body {
-    height: 100%;
-}
+// Configs
+@import 'styles/configs/normalize';
+@import 'styles/configs/colors';
 
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-}
+// Material custom theme
+@import 'styles/themes/material';
+
+// Components
+@import 'styles/components/forms';
+@import 'styles/components/buttons';
+@import 'styles/components/inputs';

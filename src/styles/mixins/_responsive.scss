@@ -1,0 +1,41 @@
+$view-laptop: 1200px;
+$view-tablet_p: 1025px;
+$view-tablet_max: 900px;
+$view-tablet_min: 750px;
+$view-mobile: 550px;
+$view-extra_width: 740px;
+$view-iphone: 321px;
+$view-extra_height: 470px;
+
+@mixin min-width($breakpoint) {
+    @if $breakpoint == laptop {
+        @media (min-width: "#{$view-laptop}") {
+            @content;
+        }
+    }
+    @if $breakpoint == tablet_p {
+        @media (min-width: "#{$view-tablet_p}") {
+            @content;
+        }
+    }
+    @if $breakpoint == tablet_max {
+        @media (min-width: "#{$view-tablet_max}") {
+            @content;
+        }
+    }
+    @if $breakpoint == tablet_min {
+        @media (min-width: "#{$view-tablet_min}") {
+            @content;
+        }
+    }
+    @if $breakpoint == mobile {
+        @media (min-width: "#{$view-mobile}") {
+            @content;
+        }
+    }
+    @if $breakpoint == iphone {
+        @media (min-width: "#{$view-iphone}") {
+            @content;
+        }
+    }
+}

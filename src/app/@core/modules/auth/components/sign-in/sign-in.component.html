@@ -1,3 +1,24 @@
-<p>
-    sign-in works!
-</p>
+<div class="full-container-login">
+    <section class="section-banner"></section>
+    <section class="section-login">
+        <div class="section-logo">
+            <div class="logo"></div>
+            <h2 class="logo-name">Karaoke box</h2>
+        </div>
+        <div class="form-login">
+            <div class="form-group">
+                <mat-form-field class="input-full-width">
+                    <input type="text" matInput placeholder="Usuario" />
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field class="input-full-width">
+                    <input type="password" matInput placeholder="Contraseña" />
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <button mat-flat-button class="button-full-width" color="primary" (click)="auth()">Iniciar sesión</button>
+            </div>
+        </div>
+    </section>
+</div>

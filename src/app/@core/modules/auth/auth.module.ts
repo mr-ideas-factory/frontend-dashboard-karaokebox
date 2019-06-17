@@ -1,7 +1,9 @@
-import {CommonModule} from '@angular/common';
-import {NgModule} from '@angular/core';
-import {AuthRoutingModule} from './auth-routing.module';
-import {SignInComponent} from './components/sign-in/sign-in.component';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from '../material/material.module';
+import { AuthRoutingModule } from './auth-routing.module';
+import { SignInComponent } from './components/sign-in/sign-in.component';
 
 @NgModule({
     declarations: [
@@ -9,7 +11,10 @@ import {SignInComponent} from './components/sign-in/sign-in.component';
     ],
     imports: [
         CommonModule,
-        AuthRoutingModule
+        AuthRoutingModule,
+        FormsModule,
+        MaterialModule,
+        ReactiveFormsModule
     ],
     exports: [],
     providers: []

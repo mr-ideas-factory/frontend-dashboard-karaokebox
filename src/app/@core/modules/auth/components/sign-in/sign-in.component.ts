@@ -13,4 +13,8 @@ export class SignInComponent implements OnInit {
     ngOnInit() {
     }
 
+    auth(): void {
+
+    }
+
 }

@@ -1,0 +1,30 @@
+@import '../../../../../../styles/mixins/responsive';
+
+.full-container-login {
+    display: block;
+    height: 100vh;
+    @include min-width(mobile) {
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+}
+
+.section-banner {
+    display: none;
+    background-color: blue;
+    @include min-width(mobile) {
+        display: block;
+    }
+}
+
+.section-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-logo {
+    display: block;
+    padding: 0 20px;
+    text-align: center;
+}
