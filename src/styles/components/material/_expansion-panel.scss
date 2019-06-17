@@ -1,0 +1,15 @@
+.mat-expansion-panel-header-title {
+    & > img.song-album-image {
+        height: 40px;
+        padding: 4px;
+        width: 40px;
+    }
+    & > span {
+        padding-left: 10px;
+    }
+}
+
+.mat-expansion-panel-header-description,
+.mat-expansion-panel-header-title {
+    align-items: center;
+}

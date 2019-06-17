@@ -1,0 +1,13 @@
+.panel-list-songs-details {
+    & > * {
+        font-size: 15px;
+    }
+    & > p {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        & > * {
+            margin-right: 5px;
+        }
+    }
+}

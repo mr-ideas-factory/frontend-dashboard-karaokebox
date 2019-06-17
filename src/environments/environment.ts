@@ -4,7 +4,8 @@
 
 export const environment = {
     production: false,
-    tokenKey: 'Authorization'
+    tokenKey: 'Authorization',
+    api: ''
 };
 
 /*

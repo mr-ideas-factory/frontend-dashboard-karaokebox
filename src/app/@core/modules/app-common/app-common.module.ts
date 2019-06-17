@@ -1,11 +1,19 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {PageNotFoundComponent} from './components/page-not-found/page-not-found.component';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { MaterialModule } from '../material/material.module';
+import { ToolbarComponent } from './components/layout/toolbar/toolbar.component';
 
 @NgModule({
-    declarations: [PageNotFoundComponent],
+    declarations: [
+        ToolbarComponent
+    ],
     imports: [
-        CommonModule
+        CommonModule,
+        MaterialModule
+    ],
+    providers: [],
+    exports: [
+        ToolbarComponent
     ]
 })
 export class AppCommonModule {

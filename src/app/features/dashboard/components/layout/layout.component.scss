@@ -1,0 +1,28 @@
+@import "../../../../../styles/mixins/responsive";
+
+.dashboard-songs {
+    grid-area: dashboard-songs;
+    padding: 20px;
+}
+
+.dashboard-people {
+    grid-area: dashboard-people;
+    padding: 20px;
+}
+
+.dashboard-layout {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "dashboard-songs"
+        "dashboard-people";
+    @include min-width(tablet_min) {
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "dashboard-songs dashboard-people";
+    }
+    @include min-width(tablet_p) {
+        grid-template-columns: 33% 33% 33%;
+        grid-template-areas: "dashboard-songs dashboard-people dashboard-people";
+    }
+}

@@ -1,12 +1,12 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-import {RoleGuard} from 'src/app/@core/guards/role.guard';
-import {DashboardComponent} from './components/dashboard/dashboard.component';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { RoleGuard } from 'src/app/@core/guards/role.guard';
+import { LayoutComponent } from './components/layout/layout.component';
 
 const routes: Routes = [
     {
         path: '',
-        component: DashboardComponent,
+        component: LayoutComponent,
         canActivate: [
             RoleGuard
         ]

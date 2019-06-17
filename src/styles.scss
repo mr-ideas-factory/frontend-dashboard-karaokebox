@@ -9,6 +9,12 @@
 @import 'styles/themes/material';
 
 // Components
+@import 'styles/components/toolbar';
 @import 'styles/components/forms';
 @import 'styles/components/buttons';
 @import 'styles/components/inputs';
+@import 'styles/components/span';
+
+// Custom styles for material components
+@import 'styles/components/material/chips';
+@import 'styles/components/material/expansion-panel';
